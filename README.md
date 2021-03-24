@@ -157,7 +157,7 @@ And you can check by go to [http://localhost:9870](http://localhost:9870). If br
 ```
   $rm /home/ubuntu/hive/lib/guava-17.0.jre.jar
 ```
-7. Test your hive by ```bin\hive``` your terminal should show ```hive>```. You can exit hive by control+c
+7. Test your hive by ```bin/hive``` your terminal should show ```hive>```. You can exit hive by control+c
 8. Remove exists metastore
 ```
   $rm -rf metastore_db
