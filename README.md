@@ -139,11 +139,11 @@ And you can check by go to [http://localhost:9870](http://localhost:9870). If br
 ```
 2. Extract hive to ```/home/ubuntu/```
 ```
-  $tar -xzf /home/ubuntun/Downloads/apache-hive-3.1.2.tar.gz
+  $tar -xzf /home/ubuntun/Downloads/apache-hive-3.1.2-bin.tar.gz
 ```
 3. Rename apache-hive-3.1.2 to hive
 ```
-  $mv apache-hive-3.1.2 hive
+  $mv apache-hive-3.1.2-bin hive
 ```
 4. Set HADOOP_HOME
 ```
