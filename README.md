@@ -118,3 +118,22 @@ And you can check by go to [http://localhost:9870](http://localhost:9870). If br
   $rm /home/ubuntu/hive/lib/guava-17.0.jre.jar
 ```
 7. Test your hive by ```bin\hive``` your terminal should show ```hive>```. You can exit hive by control+c
+8. Remove exists metastore
+```
+  $rm -rf metastore_db
+```
+9. Init schema (create your metastore_db folder)
+```
+  $bin/schematool -dbType derby -initSchema
+```
+10. Run your hive
+```
+  $bin/beeline -u jdbc:hive2://
+```
+11. Create and test database table
+```
+  >CREATE TABLE pokes (foo INT, bar STRING);
+  >SHOW TABLES;
+  >INSERT INTO table pokes values(1, 'Hello world');
+  >SELECT * FROM pokes;
+```
