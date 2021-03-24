@@ -91,6 +91,46 @@ You can check result by command jps
 And you can check by go to [http://localhost:9870](http://localhost:9870). If browser show about NameNode information
 
 # Install Resource manager (Yarn component)
+1. edit ```etc/hadoop/mapred-site.xml```
+```
+<configuration>
+    <property>
+        <name>mapreduce.framework.name</name>
+        <value>yarn</value>
+    </property>
+    <property>
+        <name>mapreduce.application.classpath</name>
+        <value>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*:$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*</value>
+    </property>
+</configuration>
+```
+2. edit ```etc/hadoop/yarn-site.xml```
+```
+<configuration>
+    <property>
+        <name>yarn.nodemanager.aux-services</name>
+        <value>mapreduce_shuffle</value>
+    </property>
+    <property>
+        <name>yarn.nodemanager.env-whitelist</name>
+        <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PREPEND_DISTCACHE,HADOOP_YARN_HOME,HADOOP_MAPRED_HOME</value>
+    </property>
+</configuration>
+```
+3. Start yarn component
+```
+  $sbin/start-yarn.sh
+```
+4. Check by ```jps``` it should show
+```
+  $jps
+  16011 ResourceManager
+  16121 NodeManager
+  16292 Jps
+  12645 NameNode
+  12076 DataNode
+  12238 SecondaryNameNode
+```
 
 # Install HIVE
 1. Make sure that your are at ```/home/ubuntu```
