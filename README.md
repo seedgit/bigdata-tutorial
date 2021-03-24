@@ -93,3 +93,28 @@ And you can check by go to [http://localhost:9870](http://localhost:9870). If br
 # Install Resource manager (Yarn component)
 
 # Install HIVE
+1. Make sure that your are at ```/home/ubuntu```
+```
+  $cd /home/ubuntu
+```
+2. Extract hive to ```/home/ubuntu/```
+```
+  $tar -xzf /home/ubuntun/Downloads/apache-hive-3.1.2.tar.gz
+```
+3. Rename apache-hive-3.1.2 to hive
+```
+  $mv apache-hive-3.1.2 hive
+```
+4. Set HADOOP_HOME
+```
+  $export HADOOP_HOME=/home/ubuntu/hadoop
+```
+5. Copy and update library in hive
+```
+  $cp /home/ubuntun/hadoop/share/hadoop/common/lib/guava-27.0.jre.jar /home/ubuntu/hive/lib
+```
+6. Remove old version of guava
+```
+  $rm /home/ubuntu/hive/lib/guava-17.0.jre.jar
+```
+7. Test your hive by ```bin\hive``` your terminal should show ```hive>```. You can exit hive by control+c
