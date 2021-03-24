@@ -60,7 +60,7 @@ export JAVA_HOME=/urs/lib/jvm/java-8-openjdk-amd64
 </configuration>
 ```
 
-7. Config ```/home/ubuntu/hadoop/etc/hadoop/hdfs-site.xml``` Edit your file as follow
+6. Config ```/home/ubuntu/hadoop/etc/hadoop/hdfs-site.xml``` Edit your file as follow
 ```
 <configuration>
     <property>
@@ -69,7 +69,11 @@ export JAVA_HOME=/urs/lib/jvm/java-8-openjdk-amd64
     </property>
 </configuration>
 ```
-9. Test hadoop
+7. Format name node
+```
+  $bin/hdfs namenode -format
+```
+8. Start HDFS
 ```
   $cd /home/ubuntu/hadoop
   $sbin/start-dfs.sh
