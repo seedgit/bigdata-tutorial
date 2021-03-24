@@ -44,7 +44,7 @@ If this step is success, you can try ```ssh localhost```, ssh should allow you t
 ```
 4. In ```/home/ubuntu/hadoop/etc/hadoop/hadoop-env.sh```, Open this file then search for ```# export JAVA_HOME=```
 
-Add new line ```export JAVA_HOME=/urs/lib/jvm/java-8-openjdk-amd64``` and your file should be like
+Add new line ```export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64``` and your file should be like
 ```
 # export JAVA_HOME=
 export JAVA_HOME=/urs/lib/jvm/java-8-openjdk-amd64
