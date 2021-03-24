@@ -18,11 +18,11 @@ If you install ubuntu by yourself, you need to download requirement software by 
 ```
   $ sudo apt-get install ssh
 ```
-4. Install OpenJDK-8 (Hadoop 3.2.2 can work with openjdk-8, if you are using different version please check [https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions))
+3. Install OpenJDK-8 (Hadoop 3.2.2 can work with openjdk-8, if you are using different version please check [https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions](https://cwiki.apache.org/confluence/display/HADOOP/Hadoop+Java+Versions))
 ```
   $ sudo apt-get install openjdk-8-jdk
 ```
-6. Config passphraseless ssh
+4. Config passphraseless ssh
 
 ```  
   $ ssh-keygen -t rsa -P '' -f ~/.ssh/id_rsa
