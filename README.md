@@ -151,7 +151,7 @@ And you can check by go to [http://localhost:9870](http://localhost:9870). If br
 ```
 5. Copy and update library in hive
 ```
-  $cp /home/ubuntu/hadoop/share/hadoop/common/lib/guava-27.0.jre.jar /home/ubuntu/hive/lib
+  $cp /home/ubuntu/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar /home/ubuntu/hive/lib
 ```
 6. Remove old version of guava
 ```
