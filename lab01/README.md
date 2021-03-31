@@ -12,7 +12,7 @@
 
 ```
 CREATE EXTERNAL TABLE IF NOT EXISTS all_stock_1
-(d date, open float, high float, low float, close float, name string)
+(`date` date,open float,high float,low float,close float, volume int,Name string)
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE
