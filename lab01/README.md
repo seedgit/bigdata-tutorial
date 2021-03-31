@@ -16,7 +16,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS all_stock_1
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
 STORED AS TEXTFILE
-LOCATION 'hdfs://user/ubuntu/all_stocks_5yr.csv';
+LOCATION 'hdfs://user/hive/warehouse/example.db/all_stocks_5yr.csv';
 ```
 
 6. Import folder to hive table
