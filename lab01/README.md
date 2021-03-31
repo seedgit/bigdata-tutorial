@@ -49,4 +49,4 @@ LOAD DATA LOCAL INPATH '/home/ubuntu/Downloads/all_stocks_5yr.csv' overwrite int
 select * from all_stock_1 limit 100;
 ```
 
-hive -e 'select CONCAT_WS(',',cola,colb,colc...,coln) from Mytable' > /home/user/Mycsv.csv
+hive -e 'select * from all_stock_2 limit 100' > /home/user/Mycsv.csv
