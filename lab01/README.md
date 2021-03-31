@@ -11,7 +11,7 @@
 - Go to hive console
 
 ```
-CREATE EXTERNAL TABLE IF NOT EXISTS default.all_stock_1
+CREATE EXTERNAL TABLE IF NOT EXISTS all_stock_1
 (d date, open float, high float, low float, close float, name string)
 ROW FORMAT DELIMITED
 FIELDS TERMINATED BY ','
