@@ -41,7 +41,7 @@ STORED AS TEXTFILE;
 ```
 - load data from local drive to hive table (put file to hdfs + mapping file to hive table)
 ```
-LOAD DATA LOCAL INPATH '/home/ubuntu/Download/' overwrite into table all_stock_1;
+LOAD DATA LOCAL INPATH '/home/ubuntu/Downloads/all_stocks_5yr.csv' overwrite into table all_stock_1;
 ```
 
 - test by query to table all_stock_1. e.g.,
